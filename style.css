@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-image: url('Assets/oguri_s.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#oguri {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    user-select: none;
+    transform-origin: bottom center; 
+    margin: 0; 
+    display: block;
+}
+.animasi-blobbing {
+    animation: blobbing 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+@keyframes blobbing {
+    0% { transform: scale(1, 1); }
+    15% { transform: scale(1.25, 0.75); }
+    40% { transform: scale(0.75, 1.3) translateY(-20px); } 
+    65% { transform: scale(1.15, 0.85) translateY(0); }   
+    80% { transform: scale(0.95, 1.05); }
+    100% { transform: scale(1, 1); }
+}
