@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <img id="kuda" src="Assets/oguri_cap.png" 
+      <div class="cont">
+        <h1 class="judul">OGURI CAP SNEEZE</h1>
+    <div class="cont">
+        <div class="counting-machine">
+            <span id="num-count">Loading...</span>
+        </div>
+        
+        <img id="oguri" src="Assets/oguri_cap.png" alt="Oguri Cap">
     </div>
 
     <audio id="proboro" src="Assets/sneeze.mp3"></audio>
+    
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
