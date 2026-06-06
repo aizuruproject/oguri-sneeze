@@ -1,4 +1,4 @@
-
+//OGURIIIII
 const oguri = document.getElementById('kuda');
 const sneeze = document.getElementById('proboro');
 oguri.addEventListener('click', () => {
