@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -11,14 +10,44 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    font-family: 'M PLUS 1p', sans-serif;
+    
 }
-.container {
+
+
+.cont {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    gap: 20px; 
 }
+
+
+.judul {
+    font-size: 2.2em;
+    font-weight: 900;
+    color: #393838;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0;
+    
+}
+
+.counting-machine {
+    border-radius: 10px;
+    padding: 15px 30px;
+    
+}
+
+#num-count {
+    font-size: 3.5em;
+    font-weight: 900;
+    color: #2b2a2a; 
+}
+
 #oguri {
     width: 250px;
     height: auto;
@@ -28,9 +57,12 @@ body {
     margin: 0; 
     display: block;
 }
+
 .animasi-blobbing {
-    animation: blobbing 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+   
+    animation: blobbing 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
+
 @keyframes blobbing {
     0% { transform: scale(1, 1); }
     15% { transform: scale(1.25, 0.75); }
@@ -38,4 +70,21 @@ body {
     65% { transform: scale(1.15, 0.85) translateY(0); }   
     80% { transform: scale(0.95, 1.05); }
     100% { transform: scale(1, 1); }
+}
+#reset-btn{
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #fff;
+    background-color: #28A745;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+#btn-reset:active{
+    background-color: #218838;
+    transform: scale(0.95);
 }
