@@ -1,7 +1,6 @@
-//OGURIIIII
 
 const firebscfg = {
-    databaseURL: "https://oguri-sneeze-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    databaseURL: "https://oguri-cap-sneeze-default-rtdb.asia-southeast1.firebasedatabase.app/"
 };
 firebase.initializeApp(firebscfg);
 const dbg = firebase.database().ref('click_counter');
@@ -35,4 +34,13 @@ oguri.addEventListener('click', () => {
     oguri.classList.remove('animasi-blobbing');
     void oguri.offsetWidth; 
     oguri.classList.add('animasi-blobbing');
+});
+const resetbtn = document.getElementById('reset-btn');
+resetbtn.addEventListener('click',()=>{
+     const sure="Are you sure you want to reset everything?";
+    if (sure) {
+        dbg.set(0);
+    }
+
+
 });
